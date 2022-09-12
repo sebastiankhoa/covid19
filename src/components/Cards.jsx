@@ -10,7 +10,12 @@ const Cards = ({ data }) => {
 	const { confirmed, recovered, deaths, lastUpdate } = data;
 
 	return (
-		<Flex gap="8" direction={{ base: "column", md: "unset" }} mt="10">
+		<Flex
+			gap={{ base: "1", md: "6" }}
+			direction={{ base: "column", md: "unset" }}
+			mt="10"
+			align={{ base: "center", md: "unset" }}
+		>
 			<CardItem title="ca nhiễm" cases="" kind={confirmed} time={lastUpdate} colorB="purple.500" />
 			<CardItem title="ca đã hồi phục" cases="từ" kind={recovered} time={lastUpdate} colorB="green.300" />
 			<CardItem title="người đã chết" cases="bởi" kind={deaths} time={lastUpdate} colorB="red.300" />

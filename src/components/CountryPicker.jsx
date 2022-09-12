@@ -19,7 +19,7 @@ const CountryPicker = ({ onCountryChange }) => {
 			<Text fontSize="17pt" fontWeight="700">
 				Lựa chọn quốc gia:
 			</Text>
-			<Select w="30%" onChange={(e) => onCountryChange(e.target.value)}>
+			<Select w={{ base: "80%", md: "30%" }} onChange={(e) => onCountryChange(e.target.value)}>
 				<option value="">United States</option>
 				{countries.map((country, i) => (
 					<option key={i} value={country}>

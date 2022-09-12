@@ -8,7 +8,7 @@ const CardItem = ({ title, kind, time, cases, colorB }) => {
 			direction="column"
 			align="center"
 			justify="center"
-			w="600px"
+			w={{ base: "350px", md: "600px" }}
 			h="200px"
 			border="1px solid"
 			borderColor="gray.300"
